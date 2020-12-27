@@ -3,7 +3,7 @@
 var timeId = "time";
 var dateId = "date";
 var days =["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-var months = ["Jan", "Feb","Mar", "Apr","May", "Jun", "Aug","Sep","Oct","Nov","Dec"];
+var months = ["Jan","Feb","Mar","Apr","May", "Jun", "Jul", "Aug","Sep","Oct","Nov","Dec"];
 
 var consoleGreeting = "Hello World - from popup_script.js";
 
@@ -15,6 +15,8 @@ function setTimeAndDate(timeElement, dateElement)
    var time = date.getHours() + ":" + minutes + ":" + seconds;
    // In "date.getMonth", 0 indicates the first month of the year
    // In "date.getDay", O represents Sunday
+
+   console.log("The Current Month : ", date.getMonth());
    var date = days[date.getDay()] + ", " + months[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear();
    timeElement.innerHTML = time;
    dateElement.innerHTML = date;
