@@ -1,0 +1,45 @@
+<html>
+    <head> 
+        <title>ShowTime(Custom) </title>
+        <!--<script> alert('Hello World'); 
+        </script>-->
+        
+        <script src="popup_script.js"></script>
+        <style> 
+             body {
+                  padding:0px;
+                  margin: 0px;
+                  width:300px;
+                  height:200px;
+                   font-family:"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                   font-size:25px;
+             }
+
+             h1,h2{
+                 display:table-row;
+                 vertical-align:middle;
+                 text-align:center;
+             }
+             h2{
+                 background-color:#777;
+             }
+             .unselectable{
+                 -webkit-user-select:none;
+                 cursor:default;
+             }
+             #time{
+                margin-bottom:30px;
+             }
+        </style>
+    </head>
+    <body> 
+        <div class="unselectable">
+             <h1 class="empty"> </h1>
+             <h1 id="time"></h1>
+             <h2 id= "date"></h2>
+
+        </div>
+    </body>
+</html>
+
+
